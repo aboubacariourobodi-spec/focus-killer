@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Focus Killer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div id="stats">
+  <p>⏱ Temps total : <span id="totalTime">0</span> min</p>
+  <p>📊 Sessions : <span id="sessions">0</span></p>
+</div>
+    <h1>🔥 Focus Killer</h1>
+    <div>
+  <button onclick="setTime(25)">25 min</button>
+  <button onclick="setTime(50)">50 min</button>
+  
+  <input type="number" id="customTime" placeholder="minutes" min="1">
+  <button onclick="setCustomTime()">OK</button>
+</div>
+
+    <div id="timer">25:00</div>
+
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+    <label>
+  <input type="checkbox" id="hardcoreMode">
+  😈 Mode Hardcore
+</label>
+
+    <p id="message">Prêt à travailler ?</p>
+  </div>
+
+  <script src="scriptjs"></script>
+</body>
+</html>
